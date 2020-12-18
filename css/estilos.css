@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+}
+
+h1 {
+  color: #60ff95;
+  font-family: "staatliches", Verdana;
+  font-size: 2rem;
+  margin-left: 50%;
+  padding-top: 2%;
+}
+
+h2 {
+  color: black;
+  font-family: "staatliches", Verdana;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1%;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.banr {
+  width: 70%;
+  margin: auto;
+  padding: 4%;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 2rem;
+  color: #fff;
+  margin: 1%;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav ul li a:hover {
+  color: #ee5a96;
+  text-decoration: none;
+}
+
+.conteiner {
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* HOME */
+.bg-light {
+  background-color: #fff !important;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: #ee5a96;
+  border: 2px solid white;
+  border-radius: 0.25rem;
+}
+
+.main-index {
+  background-image: url(../img/fondo.main.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.main-index .about {
+  padding-right: 5%;
+  padding-top: 5%;
+  margin-top: 20px;
+}
+.main-index .about .p_descrip {
+  text-align: right;
+  color: #fff;
+}
+.main-index .about .miembros .p_miemb {
+  text-align: center;
+}
+.main-index .formulario .h2_form {
+  color: #000000;
+  font-family: "staatliches", Verdana;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1%;
+  margin-bottom: 5%;
+  margin-top: 8%;
+}
+.main-index .formulario .btn {
+  background-color: #ee5a96;
+  color: #fff;
+  margin-top: 9%;
+  width: 80%;
+  height: 50%;
+  box-shadow: 5px 5px 7px;
+}
+.main-index .iconos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+footer {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  color: #ee5a96;
+  font-size: small;
+}
+footer .f_p {
+  margin-top: 6%;
+  margin-bottom: 1%;
+}
+
+/* TOUR */
+.tour-main {
+  background-image: url("../img/tour.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 20%;
+}
+.tour-main .SM_IMG {
+  width: 65%;
+  margin: auto;
+  padding: 8% 8% 1% 8%;
+}
+.tour-main .h1_tour {
+  font-size: 5rem;
+  color: #fff;
+  margin-left: 40%;
+  text-shadow: #c51432 5px 5px 5px;
+  padding-bottom: 2%;
+}
+.tour-main #tour_principal {
+  padding-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tour-main #tour_principal .tour_box {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+  width: 50%;
+  margin-right: 10%;
+}
+.tour-main #tour_principal .tour_box .tour_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.tour-main #tour_principal .tour_box .tour_right .tour_button {
+  margin-top: 70%;
+  margin-bottom: 80%;
+  padding: 3%;
+  text-align: center;
+  background-color: #60ff95;
+  border-radius: 10px;
+}
+.tour-main #tour_principal .tour_box .tour_right .tour_button a {
+  color: black;
+  text-decoration: none;
+}
+.tour-main #tour_principal .tour_box .tour_right .tour_button a:hover {
+  color: #ee5a96;
+  text-decoration: none;
+}
+.tour-main #tour_principal .tour_box .tour_right .tour_button:hover {
+  box-shadow: 5px 5px 7px #fff;
+}
+.tour-main #tour_principal .tour_box .tour_left {
+  margin-right: 25%;
+}
+.tour-main #tour_principal .tour_box .tour_left .tour_lugar {
+  font-size: 2rem;
+  margin-bottom: 20%;
+  border-bottom: 1px solid #fff;
+}
+
+/* GALERIA */
+.main-galeria .grid-container {
+  display: grid;
+  justify-content: center;
+  margin-left: 2%;
+  grid-template-columns: 32% 32% 32%;
+  grid-template-rows: 23% 23% 23% 23%;
+  gap: 0px 0px;
+  grid-template-areas: "foto1 foto1 foto3" "foto2 foto2 foto3" "foto4 foto4 foto4" "foto5 foto6 foto7";
+}
+.main-galeria .grid-container .foto1 {
+  grid-area: foto1;
+  margin-bottom: 5%;
+}
+.main-galeria .grid-container .foto3 {
+  grid-area: foto3;
+}
+.main-galeria .grid-container .foto2 {
+  grid-area: foto2;
+  margin-bottom: 5%;
+}
+.main-galeria .grid-container .foto4 {
+  grid-area: foto4;
+}
+.main-galeria .grid-container .foto5 {
+  grid-area: foto5;
+  margin-top: 5%;
+}
+.main-galeria .grid-container .foto6 {
+  grid-area: foto6;
+  margin-top: 5%;
+}
+.main-galeria .grid-container .foto7 {
+  grid-area: foto7;
+  margin-top: 5%;
+}
+
+/* ALBUMS */
+.main_albums #alb {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.main_albums #alb .album2 {
+  padding: 1%;
+}
+.main_albums #alb .album5 {
+  padding: 1%;
+}
+.main_albums .reproductor {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+/* MERCH */
+.main_merch {
+  background-size: 50%;
+  background-image: url(../img/fondo.merch.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: unset;
+}
+.main_merch .slider {
+  width: 100%;
+  height: 100%;
+}
+.main_merch .top_merch {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.main_merch .categorias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_merch .categorias .categorias_titulo {
+  margin-top: 2%;
+  width: 100%;
+  background-color: #ee5a96;
+}
+.main_merch .categorias .categorias_titulo .h1_merch {
+  margin-top: 1%;
+  position: relative;
+  font-size: 5rem;
+  color: white;
+}
+.main_merch .categorias .tarjetas_merch {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 70%;
+}
+.main_merch .categorias .tarjetas_merch .tarjeta_clothing {
+  padding: 1%;
+  margin: 3%;
+}
+.main_merch .categorias .tarjetas_merch .tarjeta_toys {
+  padding: 1%;
+  margin: 3%;
+}
+.main_merch .categorias .tarjetas_merch .tarjeta_accessories {
+  padding: 1%;
+  margin: 3%;
+}
+.main_merch .categorias .tarjetas_merch .tarjeta_posters {
+  padding: 1%;
+  margin: 3%;
+}
+.main_merch .categorias .tarjetas_merch .tarjeta_kids {
+  padding: 1%;
+  margin: 3%;
+}
+.main_merch .categorias .tarjetas_merch .tarjeta_collection {
+  padding: 1%;
+  margin: 3%;
+}
+.main_merch .categorias .tarjetas_merch .button_new {
+  width: 40%;
+  height: 13%;
+  padding: 1%;
+  padding-top: 3%;
+  text-align: center;
+  background-color: black;
+  border-radius: 8px;
+  color: #fff;
+  margin-left: 30%;
+}
+.main_merch .categorias .tarjetas_merch .button_new a {
+  color: #fff;
+}
+.main_merch .categorias .tarjetas_merch .button_new a:hover {
+  color: #ee5a96;
+  text-decoration: none;
+}
+.main_merch .categorias .tarjetas_merch .button_new:hover {
+  box-shadow: 5px 5px 7px #ee5a96;
+}
+
+/*media queries */
+@media (max-width: 760px) {
+  .bnt {
+    width: 100%;
+    height: 100%;
+  }
+
+  .art-menu {
+    display: none;
+  }
+
+  .banr {
+    margin-top: 13%;
+  }
+
+  .tour-main .h1_tour {
+    font-size: 3rem;
+    padding-right: 15%;
+  }
+  .tour-main .tour_box .tour_right {
+    margin-bottom: 80%;
+    margin-top: 60%;
+  }
+  .tour-main .tour_box .tour_left .tour_lugar {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 760px) {
+  .navbar {
+    display: none;
+  }
+}

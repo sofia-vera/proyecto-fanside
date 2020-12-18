@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
+
+$fuente_principal: 'Roboto Mono', sans-serif;
+$fuente_segundaria: 'staatliches', Verdana;
+$color_titulos: rgb(96, 255, 149);
+$blanco: #fff;
+$negro: rgb(0, 0, 0);
+$rosa: #ee5a96;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fuente_principal;
+
+}
+
+
+h1 {
+    color: $color_titulos;
+    font-family: $fuente_segundaria;
+    font-size: 2rem;
+    margin-left: 50%;
+    padding-top: 2%;
+
+}
+
+h2{
+    color: $negro;
+    font-family: $fuente_segundaria;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1%;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.banr {
+    width: 70%;
+    margin: auto;
+    padding: 4%;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 2rem;
+    color: $blanco;
+    margin: 1%;
+
+    a {
+        text-decoration: none;
+        color: $negro;         
+    }
+
+    a:hover {
+        color: $rosa;
+        text-decoration: none;   
+    }
+}
+
+
+.conteiner{
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+
+/* HOME */
+
+.bg-light {
+    background-color: $blanco!important;
+}
+
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: $rosa;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: .25rem;
+}
+
+
+.main-index {
+    background-image: url(../img/fondo.main.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .about {
+        padding-right: 5%;
+        padding-top: 5%;
+        margin-top: 20px;
+        
+        .p_descrip {
+            text-align: right;
+            color: $blanco;
+        }
+
+    .miembros {
+        .p_miemb {
+            text-align: center;
+        }        
+    }
+
+    }
+
+    .formulario{
+
+        .h2_form {
+            color: #000000;
+            font-family: $fuente_segundaria;
+            font-size: 2rem;
+            text-align: center;
+            padding: 1%;
+            margin-bottom: 5%;
+            margin-top: 8%;
+        }
+
+        .btn {
+            background-color: $rosa;
+            color: $blanco;
+            margin-top: 9%;
+            width: 80%;
+            height: 50%;
+            box-shadow: 5px 5px 7px;
+        }
+    }
+
+    .iconos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4%;
+    }
+    
+}
+
+
+footer {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: $rosa;
+    font-size: small;
+
+    .f_p {
+        margin-top: 6%;
+        margin-bottom: 1%;
+    }
+}
+
+
+
+
+
+
+/* TOUR */
+
+
+.tour-main {
+    background-image: url("../img/tour.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 20%;
+
+    .SM_IMG {
+        width: 65%;
+        margin: auto;
+        padding : 8% 8% 1% 8%;
+    
+    }
+
+    .h1_tour {
+        font-size: 5rem;
+        color: $blanco;
+        margin-left: 40%;
+        text-shadow: rgb(197, 20, 50) 5px 5px 5px;
+        padding-bottom: 2%; 
+    
+        
+    }
+
+    #tour_principal {
+        padding-bottom: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .tour_box {
+            display: flex;
+            justify-content: center;
+            margin: 5%;
+            width: 50%;
+            margin-right:10%;
+
+            .tour_right{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 5%;
+
+                .tour_button {
+                    margin-top: 70%;
+                    margin-bottom: 80%;
+                    padding: 3%;
+                    text-align: center;
+                    background-color: $color_titulos;
+                    border-radius: 10px;
+                }
+
+                .tour_button a{
+                    color: $negro;
+                    text-decoration: none;    
+                }
+    
+                .tour_button a:hover {
+                    color:$rosa;
+                    text-decoration: none;
+                }
+    
+                .tour_button:hover
+                {
+                    box-shadow: 5px 5px 7px $blanco;
+                }
+                
+            }
+            
+
+            .tour_left {
+                margin-right: 25%;
+
+                .tour_lugar{
+                    font-size: 2rem;
+                    margin-bottom: 20%;
+                    border-bottom: 1px solid $blanco;
+                }           
+            }
+        }
+    }
+}
+
+
+
+
+/* GALERIA */
+
+.main-galeria {
+    .grid-container {
+        display: grid;
+        justify-content: center;
+        margin-left: 2%;
+        grid-template-columns: 32% 32% 32%;
+        grid-template-rows: 23% 23% 23% 23%;
+        gap: 0px 0px;
+        grid-template-areas:
+        "foto1 foto1 foto3"
+        "foto2 foto2 foto3"
+        "foto4 foto4 foto4"
+        "foto5 foto6 foto7";
+
+        .foto1 { 
+            grid-area: foto1;
+            margin-bottom: 5%;
+        
+        }
+        
+        .foto3 { 
+        grid-area: foto3; 
+        
+        }
+        
+        .foto2 {
+        grid-area: foto2;
+        margin-bottom: 5%;  
+        
+        }
+        
+        .foto4 { 
+        grid-area: foto4; 
+        
+        }
+        
+        .foto5 {
+        grid-area: foto5;
+        margin-top: 5%;
+        
+        }
+        
+        .foto6 {
+        grid-area: foto6;
+        margin-top: 5%; 
+        
+        }
+        
+        .foto7 {
+        grid-area: foto7;
+        margin-top: 5%; 
+        
+        }
+    }
+}
+
+
+
+/* ALBUMS */
+
+.main_albums {
+    #alb {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .album2 {
+            padding: 1%;
+        }
+        .album5 {
+            padding: 1%;
+        }
+    }
+
+    .reproductor {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5%;
+    }
+}
+
+
+
+/* MERCH */
+
+
+.main_merch {
+    background-size: 50%;
+    background-image: url(../img/fondo.merch.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: unset;
+
+    .slider {
+        width: 100%;
+        height: 100%;
+    }
+
+    .top_merch {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center
+
+        
+        
+    }
+
+    .categorias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .categorias_titulo {
+            margin-top:2%;
+            width: 100%;
+            background-color: $rosa;
+
+            .h1_merch {
+                margin-top: 1%;
+                position: relative;
+                font-size: 5rem;
+                color: rgb(255, 255, 255);
+            
+            }
+        }
+
+        .tarjetas_merch {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            width: 70%;
+
+            .tarjeta_clothing {
+                padding: 1%;
+                margin: 3%;
+            }
+
+            .tarjeta_toys {
+                padding: 1%;
+                margin: 3%;
+            }
+            
+            .tarjeta_accessories {
+                padding: 1%;
+                margin: 3%;
+            }
+            
+            .tarjeta_posters {
+                padding: 1%;
+                margin: 3%;
+            }
+            
+            .tarjeta_kids {
+                padding: 1%;
+                margin: 3%;
+            }
+            
+            .tarjeta_collection {
+                padding: 1%;
+                margin: 3%;
+            }
+
+            .button_new{
+                width: 40%;
+                height: 13%;
+                padding: 1%;
+                padding-top: 3%;
+                text-align: center;
+                background-color: $negro;
+                border-radius: 8px;
+                color: $blanco;
+                margin-left:30%;
+            } 
+            
+            .button_new a{
+                color: $blanco;    
+            }
+
+            .button_new a:hover {
+                color:$rosa;
+                text-decoration: none;
+            }
+
+            .button_new:hover
+            {
+                box-shadow: 5px 5px 7px $rosa;
+            }
+
+        }
+
+    }
+
+
+
+}
+
+
+
+
+
+/*media queries */
+@media (max-width: 760px) {
+    .bnt{
+        width: 100%;
+        height: 100%;
+    }
+
+    .art-menu {
+        display: none;
+
+    }
+    .banr {
+        
+        margin-top: 13%;
+    }
+
+    .tour-main {
+        .h1_tour {
+            font-size: 3rem;
+            padding-right: 15%;
+        }
+
+    .tour_box {
+        .tour_right{
+            margin-bottom: 80%;
+            margin-top: 60%;
+        }
+
+        .tour_left {
+            
+            .tour_lugar{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    }
+
+
+
+}
+
+@media (min-width: 760px) {
+
+    .navbar{
+        display: none;
+    }
+
+
+}

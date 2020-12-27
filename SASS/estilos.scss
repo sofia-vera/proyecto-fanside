@@ -121,6 +121,18 @@ nav ul li {
         }        
     }
 
+    .boton_subir {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    background-color:$negro;
+    padding: 0.7em 1em;
+    font-size: 2em;
+    border-radius: 50%;
+    color: $negro;
+    transition: color $rosa, background-color 0.5s;
+    }
+
     }
 
     .formulario{
@@ -269,30 +281,35 @@ footer {
     .grid-container {
         display: grid;
         justify-content: center;
-        margin-left: 2%;
-        grid-template-columns: 32% 32% 32%;
-        grid-template-rows: 23% 23% 23% 23%;
+        margin-left: 5%;
+        margin-bottom: 15%;
+        grid-template-columns: 25% 25% 25%;
+        grid-template-rows: 18% 18% 18% 18%;
         gap: 0px 0px;
         grid-template-areas:
         "foto1 foto1 foto3"
         "foto2 foto2 foto3"
         "foto4 foto4 foto4"
-        "foto5 foto6 foto7";
+        "foto5 foto6 foto7"
+        "foto8 foto9 foto9"
+        "foto8 foto10 foto10";
 
         .foto1 { 
             grid-area: foto1;
-            margin-bottom: 5%;
+            margin-bottom: 2%;
         
         }
         
         .foto3 { 
-        grid-area: foto3; 
+        grid-area: foto3;
+        margin-left: 25%;
+        margin-top: 15%; 
         
         }
         
         .foto2 {
         grid-area: foto2;
-        margin-bottom: 5%;  
+        margin-bottom: 2%;  
         
         }
         
@@ -303,21 +320,41 @@ footer {
         
         .foto5 {
         grid-area: foto5;
-        margin-top: 5%;
+        margin-top: 25%;
         
         }
         
         .foto6 {
         grid-area: foto6;
-        margin-top: 5%; 
+        margin-top: 13%;
+        margin-right: 2%; 
+        margin-left: 2%; 
         
         }
         
         .foto7 {
         grid-area: foto7;
-        margin-top: 5%; 
+        margin-top: 2%; 
         
         }
+        
+        .foto8 {
+            grid-area: foto8;
+            margin-top: 45%;
+            margin-right: 5%; 
+        }
+
+        .foto9 {
+                grid-area: foto9;
+                margin-top: 5%;
+        }
+
+        .foto10 {
+                grid-area: foto10;
+                margin-top: 5%;
+                margin-bottom: 5%;            
+        }
+    
     }
 }
 
@@ -346,8 +383,16 @@ footer {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
         padding-top: 5%;
+
+        .noodle_reproductor {
+            margin: none;
+        }
+
+        .spoty_reproductor {
+            margin-bottom: 10%;
+        }
+
     }
 }
 
@@ -380,13 +425,9 @@ footer {
     }
 
     .categorias {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
 
         .categorias_titulo {
             margin-top:2%;
-            width: 100%;
             background-color: $rosa;
 
             .h1_merch {
@@ -401,11 +442,11 @@ footer {
         .tarjetas_merch {
             display: flex;
             flex-wrap: wrap;
-            flex-direction: row;
             justify-content: center;
-            padding-top: 10%;
-            padding-bottom: 10%;
-            width: 70%;
+            padding: 5%;
+            margin: 5%;
+
+            
 
             .tarjeta_clothing {
                 padding: 1%;
@@ -441,7 +482,7 @@ footer {
                 width: 40%;
                 height: 13%;
                 padding: 1%;
-                padding-top: 3%;
+                padding-top: 4%;
                 text-align: center;
                 background-color: $negro;
                 border-radius: 8px;
@@ -473,6 +514,18 @@ footer {
 
 
 
+/* FANS */
+
+.main-fans {
+    .foro {
+        .h1-foro {
+            font-size: 3rem;
+        }
+    }
+}
+
+
+
 
 
 /*media queries */
@@ -489,6 +542,8 @@ footer {
     .banr {
         
         margin-top: 13%;
+        margin-bottom: 1%;
+        padding-bottom: none;
     }
 
     .tour-main {
@@ -515,12 +570,17 @@ footer {
 
 
 
+
 }
 
 @media (min-width: 760px) {
 
     .navbar{
         display: none;
+    }
+
+    .navbar-nav {
+        text-align: center;
     }
 
 

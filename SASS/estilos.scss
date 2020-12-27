@@ -121,18 +121,6 @@ nav ul li {
         }        
     }
 
-    .boton_subir {
-    position: fixed;
-    bottom: 2em;
-    right: 2em;
-    background-color:$negro;
-    padding: 0.7em 1em;
-    font-size: 2em;
-    border-radius: 50%;
-    color: $negro;
-    transition: color $rosa, background-color 0.5s;
-    }
-
     }
 
     .formulario{
@@ -517,6 +505,10 @@ footer {
 /* FANS */
 
 .main-fans {
+
+    background-image: url(../img/fans_fondo.png);
+    background-position: right;
+    background-repeat: no-repeat;
     .foro {
             width: 60%;
             border-radius: 10px;
@@ -529,7 +521,7 @@ footer {
             .h1-foro {
                 font-size: 4rem;
                 font-family: $fuente_segundaria;
-                padding-right: 7%;
+                margin: auto;
                 
             }
             
@@ -572,6 +564,23 @@ footer {
             }
 
 
+        }
+
+        .fan-art-img {
+            margin-top: 10%;
+        }
+        .texto-fan-art {
+            text-align: center;
+            
+        }
+
+        .carousel {
+            .slider{
+                .carousel-item {
+                    margin-right: 60%;
+                    width: 100%;
+                }
+            }
         }
     }
 
@@ -621,6 +630,33 @@ footer {
 
     }
 
+    .main-index {
+        .about {
+            padding-top: 15%;
+        }
+
+        .miembros{
+            .cabecitas {
+                margin-left: 15%;
+            }
+        }
+        .formulario {
+            text-align: center;
+
+            .text-area{
+                padding-right: 10%;
+
+            }
+        }
+    }
+
+
+
+    .main-fans {
+
+        background-image: none;
+}
+
 
 
 
@@ -635,5 +671,8 @@ footer {
     .navbar-nav {
         text-align: center;
     }
+
+
+
 }
 

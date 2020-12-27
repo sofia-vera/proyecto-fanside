@@ -95,17 +95,6 @@ nav ul li a:hover {
 .main-index .about .miembros .p_miemb {
   text-align: center;
 }
-.main-index .about .boton_subir {
-  position: fixed;
-  bottom: 2em;
-  right: 2em;
-  background-color: black;
-  padding: 0.7em 1em;
-  font-size: 2em;
-  border-radius: 50%;
-  color: black;
-  transition: color #ee5a96, background-color 0.5s;
-}
 .main-index .formulario .h2_form {
   color: #000000;
   font-family: "staatliches", Verdana;
@@ -377,6 +366,11 @@ footer .f_p {
 }
 
 /* FANS */
+.main-fans {
+  background-image: url(../img/fans_fondo.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
 .main-fans .foro {
   width: 60%;
   border-radius: 10px;
@@ -389,7 +383,7 @@ footer .f_p {
 .main-fans .foro .h1-foro {
   font-size: 4rem;
   font-family: "staatliches", Verdana;
-  padding-right: 7%;
+  margin: auto;
 }
 .main-fans .foro .p-foro {
   font-size: 1rem;
@@ -422,6 +416,16 @@ footer .f_p {
 .main-fans .foro .boton-foro :hover {
   box-shadow: 5px 5px 7px #ee5a96;
 }
+.main-fans .fan-art-img {
+  margin-top: 10%;
+}
+.main-fans .texto-fan-art {
+  text-align: center;
+}
+.main-fans .carousel .slider .carousel-item {
+  margin-right: 60%;
+  width: 100%;
+}
 
 /*media queries */
 @media (max-width: 760px) {
@@ -450,6 +454,23 @@ footer .f_p {
   }
   .tour-main .tour_box .tour_left .tour_lugar {
     font-size: 1rem;
+  }
+
+  .main-index .about {
+    padding-top: 15%;
+  }
+  .main-index .miembros .cabecitas {
+    margin-left: 15%;
+  }
+  .main-index .formulario {
+    text-align: center;
+  }
+  .main-index .formulario .text-area {
+    padding-right: 10%;
+  }
+
+  .main-fans {
+    background-image: none;
   }
 }
 @media (min-width: 760px) {

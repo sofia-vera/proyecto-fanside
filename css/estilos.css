@@ -109,16 +109,20 @@ nav ul li a:hover {
   color: #fff;
   margin-top: 9%;
   width: 80%;
-  height: 50%;
-  box-shadow: 5px 5px 7px;
+  height: 40%;
 }
-.main-index .iconos {
+.main-index .row_iconos {
+  width: 100%;
+  padding-left: 34%;
+  padding-right: 34%;
+}
+.main-index .row_iconos .iconos {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin-top: 4%;
+  width: 100%;
 }
 
 footer {
@@ -189,6 +193,12 @@ footer .f_p {
 }
 .tour-main #tour_principal .tour_box .tour_right .tour_button:hover {
   box-shadow: 5px 5px 7px #fff;
+}
+.tour-main #tour_principal .tour_box .tour_right .tour_button_1 {
+  margin-top: 40%;
+}
+.tour-main #tour_principal .tour_box .tour_right .tour_button_2 {
+  margin-top: 40%;
 }
 .tour-main #tour_principal .tour_box .tour_left {
   margin-right: 25%;
@@ -262,6 +272,18 @@ footer .f_p {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+.main_albums #alb .albums_boton_info {
+  color: white;
+  padding: 2%;
+  background-color: #ee5a96;
+  height: 20%;
+  border-radius: 10px;
+}
+.main_albums #alb .albums_boton_info:hover {
+  color: black;
+  text-decoration: none;
+  box-shadow: 5px 5px 7px black;
 }
 .main_albums #alb .album2 {
   padding: 1%;
@@ -407,15 +429,8 @@ footer .f_p {
   border-radius: 8px;
   color: #fff;
 }
-.main-fans .foro .boton-foro a {
+.main-fans .foro .boton-foro:hover {
   text-decoration: none;
-  color: #fff;
-}
-.main-fans .foro .boton-foro a:hover {
-  color: #ee5a96;
-  text-decoration: none;
-}
-.main-fans .foro .boton-foro :hover {
   box-shadow: 5px 5px 7px #ee5a96;
 }
 .main-fans .fan-art-img {
@@ -424,6 +439,14 @@ footer .f_p {
 .main-fans .texto-fan-art {
   text-align: center;
   font-size: 0.8rem;
+}
+.main-fans .texto-fan-art a {
+  color: #ee5a96;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.main-fans .texto-fan-art a:hover {
+  color: black;
 }
 .main-fans .fan-art-imgs {
   display: flex;
@@ -434,11 +457,6 @@ footer .f_p {
 
 /*media queries */
 @media (max-width: 769px) {
-  .bnt {
-    width: 100%;
-    height: 100%;
-  }
-
   .art-menu {
     display: none;
   }
@@ -452,15 +470,14 @@ footer .f_p {
   /* TOUR */
   .tour-main .h1_tour {
     font-size: 3rem;
-    padding-right: 15%;
+    margin-left: 37%;
   }
   .tour-main .tour_box .tour_right {
-    margin-bottom: 20%;
-    margin-top: 40%;
+    margin-top: 30%;
+    margin-bottom: 60%;
   }
   .tour-main .tour_box .tour_right .tour_button {
-    padding-right: 60%;
-    padding-left: 60%;
+    width: 120%;
   }
   .tour-main .tour_box .tour_left .tour_lugar {
     font-size: 1rem;
@@ -479,14 +496,22 @@ footer .f_p {
   .main-index .formulario .text-area {
     padding-right: 10%;
   }
+  .main-index .formulario .btn {
+    padding-bottom: 6%;
+  }
+  .main-index .row_iconos {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
   /* GALERIA */
   .main-galeria .grid-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
+    margin-left: 6%;
     padding: 3%;
-    width: 90%;
   }
   .main-galeria .grid-container .foto2 {
     margin-bottom: 5%;
@@ -511,16 +536,27 @@ footer .f_p {
   }
 
   /* ALBUMS */
-  .reproductor .noodle_reproductor {
-    padding-left: 15%;
+  .main_albums .albums_boton {
+    margin-bottom: 5%;
   }
-  .reproductor .spoty_reproductor {
-    margin-left: 8%;
+  .main_albums .reproductor .noodle_reproductor {
+    padding-left: 15%;
+    width: 80%;
+  }
+  .main_albums .reproductor .spoty_reproductor {
+    margin: auto;
   }
 
   /* FANS */
   .main-fans {
     background-image: none;
+  }
+  .main-fans .foro {
+    margin-top: 10%;
+  }
+  .main-fans .texto-fan-art {
+    width: 90%;
+    margin: auto;
   }
 }
 @media (min-width: 769px) {

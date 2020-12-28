@@ -573,20 +573,17 @@ footer {
         }
         .texto-fan-art {
             text-align: center;
+            font-size: 0.8rem;
             
         }
 
-        
-            
-                .carousel-control-prev{
-                    
-                    .visually-hidden {
-                        width: 100%;
-                        margin-left:10%;
-                    }
-                }
+        .fan-art-imgs {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center
 
-            
+        }
         
     }
 

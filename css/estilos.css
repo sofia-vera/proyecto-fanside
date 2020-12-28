@@ -423,10 +423,13 @@ footer .f_p {
 }
 .main-fans .texto-fan-art {
   text-align: center;
+  font-size: 0.8rem;
 }
-.main-fans .carousel-control-prev .visually-hidden {
-  width: 100%;
-  margin-left: 10%;
+.main-fans .fan-art-imgs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /*media queries */

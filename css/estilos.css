@@ -169,7 +169,7 @@ footer .f_p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 5%;
+  margin-top: -9;
 }
 .tour-main #tour_principal .tour_box .tour_right .tour_button {
   margin-top: 70%;
@@ -277,10 +277,12 @@ footer .f_p {
   padding-top: 5%;
 }
 .main_albums .reproductor .noodle_reproductor {
-  margin: none;
+  margin-left: 10%;
+  padding-bottom: 0%;
 }
 .main_albums .reproductor .spoty_reproductor {
   margin-bottom: 10%;
+  padding-top: 0%;
 }
 
 /* MERCH */
@@ -368,7 +370,7 @@ footer .f_p {
 /* FANS */
 .main-fans {
   background-image: url(../img/fans_fondo.png);
-  background-position: right;
+  background-position: cover;
   background-repeat: no-repeat;
 }
 .main-fans .foro {
@@ -422,13 +424,13 @@ footer .f_p {
 .main-fans .texto-fan-art {
   text-align: center;
 }
-.main-fans .carousel .slider .carousel-item {
-  margin-right: 60%;
+.main-fans .carousel-control-prev .visually-hidden {
   width: 100%;
+  margin-left: 10%;
 }
 
 /*media queries */
-@media (max-width: 760px) {
+@media (max-width: 769px) {
   .bnt {
     width: 100%;
     height: 100%;
@@ -444,18 +446,24 @@ footer .f_p {
     padding-bottom: none;
   }
 
+  /* TOUR */
   .tour-main .h1_tour {
     font-size: 3rem;
     padding-right: 15%;
   }
   .tour-main .tour_box .tour_right {
-    margin-bottom: 80%;
-    margin-top: 60%;
+    margin-bottom: 20%;
+    margin-top: 40%;
+  }
+  .tour-main .tour_box .tour_right .tour_button {
+    padding-right: 60%;
+    padding-left: 60%;
   }
   .tour-main .tour_box .tour_left .tour_lugar {
     font-size: 1rem;
   }
 
+  /* HOME */
   .main-index .about {
     padding-top: 15%;
   }
@@ -469,11 +477,50 @@ footer .f_p {
     padding-right: 10%;
   }
 
+  /* GALERIA */
+  .main-galeria .grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3%;
+    width: 90%;
+  }
+  .main-galeria .grid-container .foto2 {
+    margin-bottom: 5%;
+  }
+  .main-galeria .grid-container .foto3 {
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .main-galeria .grid-container .foto5 {
+    margin-top: 5%;
+  }
+  .main-galeria .grid-container .foto6 {
+    margin-top: 5%;
+  }
+  .main-galeria .grid-container .foto7 {
+    margin-top: 5%;
+  }
+  .main-galeria .grid-container .foto8 {
+    margin-top: 5%;
+    margin-left: 8%;
+  }
+
+  /* ALBUMS */
+  .reproductor .noodle_reproductor {
+    padding-left: 15%;
+  }
+  .reproductor .spoty_reproductor {
+    margin-left: 8%;
+  }
+
+  /* FANS */
   .main-fans {
     background-image: none;
   }
 }
-@media (min-width: 760px) {
+@media (min-width: 769px) {
   .navbar {
     display: none;
   }

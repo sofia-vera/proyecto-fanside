@@ -572,6 +572,9 @@ footer .f_p {
   .main-fans .foro {
     margin-top: 10%;
   }
+  .main-fans .foro .boton-foro {
+    padding: 3%;
+  }
   .main-fans .texto-fan-art {
     width: 90%;
     margin: auto;
